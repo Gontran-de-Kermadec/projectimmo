@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header img {
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header img {
+  left: 50%;
+}
+
+header p {
+  text-align: center;
+  color: #A5B7C5;
+  font-size: 2.2rem;
+}
+
+@media all and (max-width: 376px) {
+  header p {
+    font-size: 1.9rem;
+  }
+}
+
+.bg-img {
+  background-image: url("assets/images/capture.png");
+  background-size: cover;
+  height: 300px;
+  background-attachment: fixed;
+}
+
+.presentation {
+  text-align: center;
+}
+
+.presentation p {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+  text-decoration: underline;
+  color: #2E75B6;
+  margin: 20px 0;
+}
+
+.presentation_initial {
+  font-size: 1.4rem;
+}
+
+.presentation_initial li {
+  margin-bottom: 10px;
+}
+
+@media all and (min-width: 1024px) {
+  .presentation_initial {
+    font-size: 1.6rem;
+  }
+}
+
+.presentation_initial .presentation_initial--bolder {
+  font-weight: bolder;
+}
+
+.presentation_titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.presentation_titre h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.presentation_titre .presentation_titre--fsize {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.forme {
+  position: relative;
+  height: 70px;
+  width: 80px;
+  background-color: #2F5597;
+}
+
+.forme::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  border-left: 38px solid transparent;
+  border-bottom: 70px solid #ffff;
+}
+
+.presentation_intro, .presentation_seller, .presentation_buyer {
+  background-color: #D2D2D2;
+  position: relative;
+  font-size: 1.3rem;
+}
+
+.presentation_intro::before, .presentation_seller::before, .presentation_buyer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-top: 90px solid #fff;
+}
+
+.presentation_intro .triangle, .presentation_seller .triangle, .presentation_buyer .triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 40px solid transparent;
+  border-top: 75px solid #2E75B6;
+}
+
+.presentation_intro ul, .presentation_seller ul, .presentation_buyer ul {
+  padding: 15px 50px 30px 70px;
+  text-align: justify;
+}
+
+.presentation_intro ul li, .presentation_seller ul li, .presentation_buyer ul li {
+  margin-bottom: 10px;
+}
+
+@media all and (min-width: 767px) {
+  .presentation_intro ul, .presentation_seller ul, .presentation_buyer ul {
+    padding: 25px 100px 50px 100px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .presentation_intro ul, .presentation_seller ul, .presentation_buyer ul {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
