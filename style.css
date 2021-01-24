@@ -30,7 +30,7 @@ header p {
 }
 
 .bg-img {
-  background-image: url("assets/images/capture.png");
+  background-image: url("./assets/images/capture.png");
   background-size: cover;
   height: 300px;
   background-attachment: fixed;
