@@ -154,4 +154,13 @@ h1 {
     font-size: 1.5rem;
   }
 }
+
+.byone {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.byone p {
+  display: inline;
+}
 /*# sourceMappingURL=style.css.map */
