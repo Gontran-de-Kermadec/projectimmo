@@ -8,8 +8,18 @@
         @content;
     }
 }
+@mixin max-tablette {
+    @media all and (max-width: map-get($map: $breakpoints, $key: tablette)) {
+        @content;
+    }
+}
 @mixin tablette {
     @media all and (min-width: map-get($map: $breakpoints, $key: tablette)) {
+        @content;
+    }
+}
+@mixin tablette-l {
+    @media all and (min-width: map-get($map: $breakpoints, $key: tablette-l)) {
         @content;
     }
 }
