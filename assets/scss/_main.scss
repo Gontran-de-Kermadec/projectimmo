@@ -1,3 +1,6 @@
+main {
+    margin: 0 80px;
+}
 .bg-img {
     background-image: url('./assets/images/bg-img.png');
     background-size: cover;
@@ -34,6 +37,7 @@ h1 {
     position: relative;
     h2 {
         align-self: center;
+        font-size: 2rem;
     }
     .presentation_titre--fsize {
         align-self: center;
@@ -95,8 +99,145 @@ h1 {
 .presentation_titre--fsize {
     font-size: 1.5rem;
 }
+//partie service pack
+.service_pack {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 700px;
+    width: 900px;
+    margin-top: 40px;
+    @include desktop-m {
+        width: 1100px;
+    }
+    @include desktop-l {
+        width: 1300px;
+    }
+}
+.service_pack-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    .title_left {
+        position: relative;
+        width: 260px;
+        height: 100px;
+        margin-right: 105px;
+        @include desktop-m {
+            width: 250px;
+        }
+        @include desktop-l {
+            width: 350px;
+        }
+        h2 {
+            position: absolute;
+            top: 45%;
+            left: 20%;
+            font-size: 2rem;
+        }
+    }
+    .title_right {
+        position: relative;
+        background-color: $form-color-dark;
+        width: 640px;
+        height: 100px;
+        margin-left: 105px;
+        @include desktop-m {
+            width: 650px;
+        }
+        @include desktop-l {
+            width: 750px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: -39.7px;
+            border-left: 40px solid transparent;
+            border-bottom: 100px solid $form-color-dark;
+            @include desktop-m {
+                left: -39.2px;
+            }
+        }
+    }
+}
+.service_pack-container {
+    display: flex;
+    justify-content: center;
+    .container_left {
+        position: relative;
+        background-color: $form-color;
+        width: 200px;
+        height: 500px;
+        margin-right: 105px;
+        @include desktop-l {
+            width: 300px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            right: -199.3px;
+            border-right: 200px solid transparent;
+            border-top: 500px solid #2E75B6;
+        }
+    }
+    .container_right {
+        position: relative;
+        background-color: #D2D2D2;
+        width: 700px;
+        height: 500px;
+        margin-left: 105px;
+        @include desktop-l {
+            width: 800px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: -199.3px;
+            border-left: 200px solid transparent;
+            border-bottom: 500px solid #D2D2D2;
+            @include desktop-l {
+                left: -199px;
+            }
+        }
+    }
+}
+.right_allpacks-container {
+    position: relative;
+    display: flex;
+    margin-right: 5px;
+    &::after {
+        content: "*Hors frais diagnostics obligatoires";
+        position: absolute;
+        bottom: -25px;
+        right: 10px;
+        padding: 5px;
+        background-color: $form-color;
+        border: 2px solid #fff;
+    }
+    .pack-container_title {
+        text-align: center;
+        margin-bottom: 10px;
+        h4, p {
+            font-size: 1.4rem;
+        }
+    }
+    .pack-container_details {
+        background-color: #C7CACB;
+        padding: 0 5px 20px 5px;
+        p {
+            text-align: center;
+            text-decoration: underline;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            margin: 10px 0;
+        }
+    }
+}
 //partie service a la carte 
-.service {
+.service_carte {
     @include tablette {
         display: flex;
         justify-content: center;
@@ -113,6 +254,12 @@ h1 {
         }
         @include max-tablette {
             display: none;
+        }
+        @include tablette {
+            margin-right: 10px;
+        }
+        @include tablette-l {
+            margin-right: 50px;
         }
     } 
 }
@@ -150,5 +297,46 @@ h1 {
     }
     p + p {
         margin-left: 20px;
+    }
+}
+
+//methode trouvée, il suffit de modifier les données
+.test_container {
+    display: flex;
+    justify-content: center;
+    .left {
+        position: relative;
+        //border: solid;
+        background-color: $form-color;
+        width: 200px;
+        height: 200px;
+        margin-right: 25px;
+        // border-right: 40px solid transparent;
+        // border-top: 75px solid #2E75B6;
+        &::after {
+            content: "";
+            position: absolute;
+            right: -40px;
+            border-right: 60px solid transparent;
+            border-top: 200px solid #2E75B6;
+        }
+    }
+    .right {
+        position: relative;
+        //border: solid;
+        background-color: grey;
+        width: 200px;
+        height: 200px;
+        margin-left: 25px;
+        // border-left: 40px solid transparent;
+        // border-bottom: 75px solid #2E75B6;
+        //margin-left: -25px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -60px;
+            border-left: 60px solid transparent;
+            border-bottom: 200px solid grey;
+        }
     }
 }
