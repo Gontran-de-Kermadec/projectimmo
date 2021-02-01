@@ -21,6 +21,7 @@ h1 {
 }
 .presentation_initial {
     font-size: 1.4rem;
+    list-style: none;
     li {
         margin-bottom: 10px;
     }
@@ -214,6 +215,9 @@ h1 {
         background-color: $form-color;
         border: 2px solid #fff;
     }
+    .right_pack-container {
+        width: 32%;
+    }
     .pack-container_title {
         text-align: center;
         margin-bottom: 10px;
@@ -233,6 +237,10 @@ h1 {
         }
         li {
             margin: 10px 0;
+        }
+        .pack_details--bold {
+            font-weight: bolder;
+            text-decoration: none;
         }
     }
 }
