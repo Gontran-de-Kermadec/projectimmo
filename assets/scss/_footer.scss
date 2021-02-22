@@ -1,0 +1,42 @@
+footer {
+    text-align: center;
+    h2 {
+        background-color: $logotext;
+        margin: 20px;
+        border-radius: 5px;
+        font-size: 2rem;
+    }
+    .margin_side {
+        margin: 0 20px;
+    }
+    .contact {
+        border-radius: 5px;
+        margin: 20px;
+        padding: 10px;
+        p {
+            font-size: 1.2rem;
+        }
+        @include tablette {
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .light {
+        background-color: $form-color;
+    }
+    .dark {
+        background-color: $form-color-dark;
+        span {
+            font-size: 0.7rem;
+        }
+    }
+    .infos_legales {
+        font-size: 0.8rem;
+        margin-top: 30px;
+        color: $form-color-dark;
+    }
+}

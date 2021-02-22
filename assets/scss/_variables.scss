@@ -1,6 +1,8 @@
 $logotext: #A5B7C5;
 $form-color-dark: #2F5597;
 $form-color: #2E75B6;
+$blue-azur: #9DC3E6;
+$bg-color-logo: #014D71;
 
 
 //map
@@ -13,3 +15,6 @@ $breakpoints: (
     desktop-m: 1200px,
     desktop-l: 1400px
 );
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+$font-family: 'Frank Ruhl Libre', serif;

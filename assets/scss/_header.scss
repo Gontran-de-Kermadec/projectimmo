@@ -1,21 +1,117 @@
 header {
-    margin-bottom: 30px;
-    img {
-        position: relative;
-        transform: translateX(-50%);
-    }
-    img {
-        left: 50%;
-    }
+    text-align: center;
     p {
-        text-align: center;
-    //     left: 48%;
-        color: $logotext;
-        font-size: 2.2rem;
-    //     width: 320px;
-        @include mobile-m {
-            //left: 53%;
-            font-size: 1.9rem;
-        } 
+        font-size: 1.3rem;
+    }
+    .presentation_logo {
+        p {
+            color: $logotext;
+            font-size: 2.2rem; 
+        }
+    }
+    @include max-tablette {
+        .presentation_img {
+            display: none;
+        }
+        .presentation_logo {
+            p {
+                font-size: 1.9rem; 
+            }
+        }
+    }
+    // margin-bottom: 30px;
+    // p {
+    // //     left: 48%;
+    //     color: $logotext;
+    //     font-size: 2.2rem;
+    // //     width: 320px;
+    //     @include mobile-m {
+    //         //left: 53%;
+    //         font-size: 1.9rem;
+    //     } 
+    // }
+    // @include tablette {
+    //     position: absolute;
+    //     top: 5%;
+    // }
+    // @include desktop-s {
+    //     left: 12%;
+    // }
+}
+.presentation {
+    text-align: center;
+    // img {
+    //     @include max-tablette {
+    //         width: 100%;
+    //     }
+    // }
+   
+}
+.presentation_begin {
+    @include tablette {
+        display: flex;
+        flex-direction: row-reverse;
+        //justify-content: center;
+        .presentation_img {
+            width: 50%;
+            height: 800px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+        .presentation_logo-text {
+            width: 50%;
+            h1 {
+                position: relative;
+                top: 10%;
+            }
+            .presentation_initial {
+                position: relative;
+                top: 15%;
+            }
+            // .presentation_logo {
+            //     img {
+            //         position: relative;
+            //         left: 50%;
+            //         transform: translateX(-50%);
+            //     }
+            // }
+        }
+    }
+}
+h1 {
+    font-size: 1.7rem;
+    text-decoration: underline;
+    color: $form-color;
+    margin: 20px 0;
+}
+.presentation_initial {
+    font-size: 1.4rem;
+    li {
+        margin-bottom: 10px;
+    }
+    @include desktop-s {
+        font-size: 1.6rem;
+    }
+    .presentation_initial--bolder {
+        font-weight: bolder;
+    }
+}
+.presentation_titre {
+    display: flex;
+    margin-bottom: 5px;
+    position: relative;
+    h2 {
+        align-self: center;
+        font-size: 2rem;
+    }
+    .presentation_titre--fsize {
+        align-self: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
