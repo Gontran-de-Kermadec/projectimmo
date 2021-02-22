@@ -63,6 +63,30 @@
         display: block;
     }
 }
+//test du bloc format
+.bloc_container {
+    @include tablette {
+        display: flex;
+        padding: 0 10px 0 50px;
+        .bloc {
+            width: 25%;
+            //border-bottom: solid;
+           // border-left: solid;
+        }
+    }
+
+}
+.presentation_seller .bloc_container {
+    @include tablette {
+        flex-wrap: wrap;
+        .bloc {
+            width: 29%;
+            margin: 15px;
+            border-top: solid;
+            border-right: solid;
+        }
+    }
+}
 
 //partie service pack
 .service_pack {

@@ -280,6 +280,31 @@ h1 {
   }
 }
 
+@media all and (min-width: 767px) {
+  .bloc_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px 0 50px;
+  }
+  .bloc_container .bloc {
+    width: 25%;
+  }
+}
+
+@media all and (min-width: 767px) {
+  .presentation_seller .bloc_container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .presentation_seller .bloc_container .bloc {
+    width: 29%;
+    margin: 15px;
+    border-top: solid;
+    border-right: solid;
+  }
+}
+
 .service_pack {
   margin-top: 20px;
 }
