@@ -202,6 +202,24 @@ h1 {
           transform: translateX(-50%);
 }
 
+.presentation_titre {
+  position: relative;
+}
+
+.presentation_titre .defile {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media all and (min-width: 767px) {
+  .presentation_titre .defile {
+    display: none;
+  }
+}
+
 .forme {
   position: relative;
   height: 70px;
@@ -285,23 +303,37 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 10px 0 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 10px 20px 50px;
   }
   .bloc_container .bloc {
-    width: 25%;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
   }
 }
 
 @media all and (min-width: 767px) {
-  .presentation_seller .bloc_container {
+  .presentation_intro .bloc_container, .presentation_seller .bloc_container, .presentation_buyer .bloc_container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .presentation_seller .bloc_container .bloc {
-    width: 29%;
+  .presentation_intro .bloc_container .bloc, .presentation_seller .bloc_container .bloc, .presentation_buyer .bloc_container .bloc {
     margin: 15px;
-    border-top: solid;
-    border-right: solid;
+    border-radius: 5px;
+    -webkit-box-shadow: -12px 8px 9px #2F5597;
+            box-shadow: -12px 8px 9px #2F5597;
+    background-color: #2E75B6;
   }
 }
 
@@ -467,7 +499,6 @@ h1 {
 }
 
 .right_allpacks-container .pack-container_details {
-  background-color: #C7CACB;
   background-color: #2E75B6;
   padding: 10px;
 }
@@ -484,6 +515,16 @@ h1 {
 .right_allpacks-container .pack-container_details .pack_details--bold {
   font-weight: bolder;
   margin-top: 10px;
+}
+
+.right_allpacks-container .pack-container_details .defile {
+  margin-left: 10px;
+}
+
+@media all and (min-width: 767px) {
+  .right_allpacks-container .pack-container_details .defile {
+    display: none;
+  }
 }
 
 @media all and (min-width: 1024px) {

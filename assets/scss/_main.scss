@@ -1,3 +1,15 @@
+.presentation_titre {
+    position: relative;
+    .defile {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include tablette {
+            display: none;
+        }
+    }
+}
 .forme {
     position: relative;
     height: 70px;
@@ -67,26 +79,44 @@
 .bloc_container {
     @include tablette {
         display: flex;
-        padding: 0 10px 0 50px;
+        justify-content: center;
+        padding: 20px 10px 20px 50px;
         .bloc {
-            width: 25%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
             //border-bottom: solid;
            // border-left: solid;
+            // p {
+            // //    margin: auto;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: flex-end;
+            // }
         }
     }
 
 }
-.presentation_seller .bloc_container {
-    @include tablette {
-        flex-wrap: wrap;
-        .bloc {
-            width: 29%;
-            margin: 15px;
-            border-top: solid;
-            border-right: solid;
+.presentation_intro, .presentation_seller, .presentation_buyer {
+    .bloc_container {
+        @include tablette {
+            flex-wrap: wrap;
+            .bloc {
+                //width: 45%;
+                margin: 15px;
+                border-radius: 5px;
+                // border-bottom: solid $form-color-dark;
+                // border-left: solid $form-color-dark;
+                box-shadow: -12px 8px 9px $form-color-dark;
+                background-color: $form-color;
+            }
         }
     }
 }
+
+
 
 //partie service pack
 .service_pack {
@@ -217,7 +247,7 @@
         }
     }
     .pack-container_details {
-        background-color: #C7CACB;
+        //background-color: #C7CACB;
         background-color: $form-color;
         padding: 10px;
         li {
@@ -230,6 +260,12 @@
         .pack_details--bold {
             font-weight: bolder;
             margin-top: 10px;
+        }
+        .defile {
+            margin-left: 10px;
+            @include tablette {
+                display: none;
+            }
         }
     }
     @include desktop-s {
