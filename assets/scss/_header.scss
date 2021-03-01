@@ -66,11 +66,11 @@ header {
             width: 50%;
             h1 {
                 position: relative;
-                top: 10%;
+                top: 5%;
             }
             .presentation_initial {
                 position: relative;
-                top: 15%;
+                top: 8%;
             }
             // .presentation_logo {
             //     img {
@@ -91,9 +91,9 @@ h1 {
 .presentation_initial {
     font-size: 1.4rem;
     li {
-        margin-bottom: 10px;
+        margin-bottom: 7px;
     }
-    @include desktop-s {
+    @include desktop-m {
         font-size: 1.6rem;
     }
     .presentation_initial--bolder {

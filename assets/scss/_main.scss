@@ -1,5 +1,11 @@
 .presentation_titre {
     position: relative;
+    h2 {
+        font-size: 1.7rem;
+        @include desktop-s {
+            font-size: 2rem;
+        }
+    }
     .defile {
         position: absolute;
         right: 20px;
@@ -64,7 +70,7 @@
     font-size: 1.5rem;
 }
 
-//test du toggle
+//test du toggle et animation
 .toggle {
     @include max-tablette {
         display: none;
@@ -74,6 +80,9 @@
     @include max-tablette {
         display: block;
     }
+}
+.rotate {
+    animation: rotation 0.5s forwards;
 }
 //test du bloc format
 .bloc_container {
@@ -101,6 +110,12 @@
 }
 .presentation_intro, .presentation_seller, .presentation_buyer {
     .bloc_container {
+        @media all and (max-width: 330px) {
+            padding: 0 20px;
+        }
+        @include max-tablette {
+            padding: 0 38px;
+        }
         @include tablette {
             flex-wrap: wrap;
             .bloc {
@@ -113,6 +128,9 @@
                 background-color: $form-color;
             }
         }
+        .bloc p {
+            padding: 10px 0;
+        }
     }
 }
 
@@ -123,7 +141,7 @@
     margin-top: 20px;
     h2 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin: 15px 0;
     }
     @include desktop-s {
@@ -182,15 +200,18 @@
         .service_pack-container {
             display: flex;
             justify-content: center;
+            @include desktop-s {
+                height: 600px; 
+            }
             .container_left {
                 position: relative;
                 background-color: $form-color;
                 width: 200px;
                 height: 500px;
                 margin-right: 105px;
-                // @include max-tablette {
-                //     display: none;
-                // }
+                @include desktop-s {
+                    height: 100%;
+                }
                 @include desktop-l {
                     width: 300px;
                 }
@@ -200,6 +221,9 @@
                     right: -199.3px;
                     border-right: 200px solid transparent;
                     border-top: 500px solid #2E75B6;
+                    @include desktop-s {
+                        border-top: 600px solid #2E75B6;  
+                    }
                 }
             }
             .container_right {
@@ -209,9 +233,9 @@
                 width: 700px;
                 height: 500px;
                 margin-left: 105px;
-                // @include max-tablette {
-                //     margin-left: 0;
-                // }
+                @include desktop-s {
+                    height: 100%;
+                }
                 @include desktop-l {
                     width: 800px;
                 }
@@ -222,9 +246,9 @@
                     border-left: 200px solid transparent;
                     //border-bottom: 500px solid #D2D2D2;
                     border-bottom: 500px solid $blue-azur;
-                    // @include max-tablette {
-                    //     display: none;
-                    // }
+                    @include desktop-s {
+                        border-bottom: 600px solid $blue-azur;  
+                    }
                     @include desktop-l {
                         left: -199px;
                     }
@@ -246,10 +270,19 @@
             font-size: 1.5rem;
         }
     }
+    @include desktop-s {
+        position: relative;
+        .right_pack-warning {
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+        }
+    }
     .pack-container_details {
         //background-color: #C7CACB;
         background-color: $form-color;
         padding: 10px;
+        border-radius: 5px;
         li {
             list-style: none;
             margin: 5px 0;
