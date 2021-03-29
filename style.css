@@ -696,7 +696,7 @@ footer {
 }
 
 footer h2 {
-  background-color: #A5B7C5;
+  background-color: #9DC3E6;
   margin: 20px;
   border-radius: 5px;
   font-size: 2rem;
@@ -704,6 +704,7 @@ footer h2 {
 
 footer .margin_side {
   margin: 0 20px;
+  font-size: 1.1rem;
 }
 
 footer .contact {

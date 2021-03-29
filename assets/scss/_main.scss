@@ -33,7 +33,6 @@
     border-bottom: 70px solid #ffff;
 }
 .presentation_intro, .presentation_seller, .presentation_buyer {
-    //background-color: #D2D2D2;
     background-color: $blue-azur;
     position: relative;
     font-size: 1.3rem;
@@ -112,11 +111,8 @@
         @include tablette {
             flex-wrap: wrap;
             .bloc {
-                //width: 45%;
                 margin: 15px;
                 border-radius: 5px;
-                // border-bottom: solid $form-color-dark;
-                // border-left: solid $form-color-dark;
                 box-shadow: -12px 8px 9px $form-color-dark;
                 background-color: $form-color;
             }
@@ -158,9 +154,6 @@
                     top: 45%;
                     left: 20%;
                     font-size: 2rem;
-                    // @include max-tablette {
-                    //     position: inherit;
-                    // }
                 }
             }
             .title_right {
@@ -169,9 +162,6 @@
                 width: 650px;
                 height: 100px;
                 margin-left: 105px;
-                // @include max-tablette {
-                //     display: none;
-                // }
                 @include desktop-m {
                     width: 650px;
                 }
@@ -221,7 +211,6 @@
             }
             .container_right {
                 position: relative;
-                //background-color: #D2D2D2;
                 background-color: $blue-azur;
                 width: 700px;
                 height: 500px;
@@ -237,7 +226,6 @@
                     position: absolute;
                     left: -199.3px;
                     border-left: 200px solid transparent;
-                    //border-bottom: 500px solid #D2D2D2;
                     border-bottom: 500px solid $blue-azur;
                     @include desktop-s {
                         border-bottom: 600px solid $blue-azur;  
@@ -252,7 +240,6 @@
 }
 .right_allpacks-container {
     text-align: center;
-    //background-color: #D2D2D2;
     background-color: $blue-azur;
     padding: 10px 0;
     .right_pack-container {
@@ -272,7 +259,6 @@
         }
     }
     .pack-container_details {
-        //background-color: #C7CACB;
         background-color: $form-color;
         padding: 10px;
         border-radius: 5px;
@@ -312,9 +298,6 @@
 }
 .service_byone {
     margin: 20px 0;
-    // @include tablette {
-    //    margin: 0;
-    // }
     @include desktop-s {
         width: 500px;
     }

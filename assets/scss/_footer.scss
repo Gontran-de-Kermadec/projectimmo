@@ -1,13 +1,15 @@
 footer {
     text-align: center;
     h2 {
-        background-color: $logotext;
+        //background-color: $logotext;
+        background-color: $blue-azur;
         margin: 20px;
         border-radius: 5px;
         font-size: 2rem;
     }
     .margin_side {
         margin: 0 20px;
+        font-size: 1.1rem;
     }
     .contact {
         border-radius: 5px;
@@ -36,10 +38,6 @@ footer {
     }
     .dark {
         background-color: $form-color-dark;
-        // color: #fff;
-        // a {
-        //     color: #fff; 
-        // }
         span {
             font-size: 0.7rem;
         }

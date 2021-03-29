@@ -19,39 +19,15 @@ header {
             }
         }
     }
-    // margin-bottom: 30px;
-    // p {
-    // //     left: 48%;
-    //     color: $logotext;
-    //     font-size: 2.2rem;
-    // //     width: 320px;
-    //     @include mobile-m {
-    //         //left: 53%;
-    //         font-size: 1.9rem;
-    //     } 
-    // }
-    // @include tablette {
-    //     position: absolute;
-    //     top: 5%;
-    // }
-    // @include desktop-s {
-    //     left: 12%;
-    // }
 }
 .presentation {
     text-align: center;
-    // img {
-    //     @include max-tablette {
-    //         width: 100%;
-    //     }
-    // }
    
 }
 .presentation_begin {
     @include tablette {
         display: flex;
         flex-direction: row-reverse;
-        //justify-content: center;
         .presentation_img {
             width: 50%;
             height: 800px;
@@ -72,13 +48,6 @@ header {
                 position: relative;
                 top: 8%;
             }
-            // .presentation_logo {
-            //     img {
-            //         position: relative;
-            //         left: 50%;
-            //         transform: translateX(-50%);
-            //     }
-            // }
         }
     }
 }
