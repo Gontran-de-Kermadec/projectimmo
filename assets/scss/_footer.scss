@@ -14,7 +14,10 @@ footer {
         margin: 20px;
         padding: 10px;
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+        }
+        a {
+            font-weight: bolder;
         }
         @include tablette {
             display: flex;
@@ -23,6 +26,9 @@ footer {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+            a, p {
+                align-self: center;
+            }
         }
     }
     .light {
@@ -30,6 +36,10 @@ footer {
     }
     .dark {
         background-color: $form-color-dark;
+        // color: #fff;
+        // a {
+        //     color: #fff; 
+        // }
         span {
             font-size: 0.7rem;
         }

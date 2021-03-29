@@ -95,7 +95,8 @@ a {
      object-fit: cover;
 }
 
-.bg_img p {
+.bg_img .enter {
+  all: unset;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -359,6 +360,7 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     padding: 10px;
+    font-weight: bolder;
   }
 }
 
@@ -711,7 +713,11 @@ footer .contact {
 }
 
 footer .contact p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+}
+
+footer .contact a {
+  font-weight: bolder;
 }
 
 @media all and (min-width: 767px) {
@@ -727,6 +733,11 @@ footer .contact p {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  footer .contact a, footer .contact p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 

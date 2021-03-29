@@ -23,7 +23,8 @@
         object-position: center;
         object-fit: cover;
     }
-    p {
+    .enter {
+        all: unset;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
